@@ -11,7 +11,7 @@ public class HibernateUtility {
     public static Session getSession(){
         if(session == null){
             Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
-            configuration.setProperty("hibernate.connection.username", System.getenv("postgresUserName"));
+            configuration.setProperty("hibernate.connection.username", System.getenv("postgresUsername"));
             configuration.setProperty("hibernate.connection.password", System.getenv("postgresPassword"));
             sessionFactory = configuration.buildSessionFactory();
             session = sessionFactory.openSession();
