@@ -12,7 +12,7 @@ public class AuthorDAOTest {
     IBookDAO bookDAO = new BookDAO();
 
     @Test
-    void insert() {
+    public void insert() {
         Author dickens = new Author("Charles", "Dickens", 1812, null);
         Author homer = new Author("Homer", null, -350, null);
         //authorDAO.insert(dickens);
