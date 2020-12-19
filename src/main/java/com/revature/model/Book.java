@@ -32,6 +32,7 @@ public class Book {
     private Author author;
 
     public Book() {
+        super();
     }
 
     public Book(String title, String category, String binding, Author author) {
@@ -67,7 +68,7 @@ public class Book {
                 ", title='" + title + '\'' +
                 ", category='" + category + '\'' +
                 ", binding='" + binding + '\'' +
-                ", author=" + author +
+                ", author=" + author.getFirst_name() + " " + author.getLast_name() +
                 '}';
     }
 }
