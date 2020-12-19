@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 
 public class AuthorDAOTest {
 
-    IAuthorDAO authorDAO = new AuthorDAO();
-    IBookDAO bookDAO = new BookDAO();
+    private IAuthorDAO authorDAO = new AuthorDAO();
+    private IBookDAO bookDAO = new BookDAO();
 
     @Test
     public void insert() {
@@ -20,17 +20,5 @@ public class AuthorDAOTest {
 
         bookDAO.insert(new Book("Oliver Twist", "Fiction", "Hard back", dickens));
         bookDAO.insert(new Book("Illiad", "Fiction", "Soft cover8", homer));
-    }
-
-    @Test
-    void update() {
-    }
-
-    @Test
-    void getAuthorById() {
-    }
-
-    @Test
-    void getAll() {
     }
 }
