@@ -14,6 +14,6 @@ public class MasterServlet extends HttpServlet {
         //resp.setStatus(404);
         resp.setStatus(200);
         resp.getWriter().print("<h1>Hello Jenkins! PIPELINES ARE AWESOME, aren't they?!</h1>");
-        resp.sendRedirect("https://www.google.com");
+        //resp.sendRedirect("https://www.google.com");
     }
 }
