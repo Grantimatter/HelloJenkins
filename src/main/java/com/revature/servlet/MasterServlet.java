@@ -13,7 +13,7 @@ public class MasterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //resp.setStatus(404);
         resp.setStatus(200);
-        resp.getWriter().print("<h1>Hello Jenkins! PIPELINES ARE AWESOME!</h1>");
+        resp.getWriter().print("<h1>Hello Jenkins! PIPELINES ARE AWESOME, aren't they?!</h1>");
         resp.sendRedirect("https://www.google.com");
     }
 }
